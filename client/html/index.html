@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <head>
+    <title>WebScrp</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <script type="text/javascript" src="/static/js/scrape.js" defer></script>
+    <script type="text/javascript" src="/static/js/animate.js" defer></script>
+    </head>
+    <body>
+      <div class="top">
+          <h1></h1>
+      </div>
+      <div class="center-text">
+          <h2></h2>
+          <p></p>
+      </div>
+
+    <div class="input">
+        <form onsubmit="return main()">
+            <input type="text" id="url-input" placeholder="Insert website link here.">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <div class="container">
+        <div class="left-box box">
+            <h2>Photos</h2>
+            <div class="photos-container">
+                
+            </div>
+        </div>
+        <div class="right-box box">
+            <h2>Text search</h2>
+            <form onsubmit="return filterText()">
+                <input type="text" id="filter-input" placeholder="Search by a given word.">
+                <input type="submit" value="Submit">
+            </form>
+            <div class="tb subcontainer" id="text-goes-here"></div>
+        </div>
+    </div>
+    </body>
+</html>
