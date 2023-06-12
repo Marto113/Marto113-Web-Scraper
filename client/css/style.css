@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+.fetched-image {
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    width: 225px;
+    height: 225px;
+    object-fit: contain;
+}
+
+.fetched-text {
+    border-width: 2px;
+    border-color: #333;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #5baaf0;
+    color: azure;
+    font-family: monospace;
+    font-size: larger;
+}
+
+.subcontainer {
+    background-color: inherit;
+    overflow-y: scroll;
+    max-height: 400px;
+    max-width: 800px;
+}
+
+.cx {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 20%;
+}
+
+.tb {
+    color:black;
+    max-height: 350px;
+}
+
+.box {
+    margin: 3%;
+    margin-top: 0;
+
+    border-width: 4px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 8px;
+    background-color: #B9D9EB;
+}
+
+.top {
+    background-color: #5baaf0;
+    padding: 15px;
+    text-align: left;
+}
+
+.top h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.center-text {
+    margin: 50px auto;
+    max-width: 600px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.input {
+    display: block;
+    margin: 50px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.input input[type="text"] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #aaa;
+}
+.input input[type="submit"] {
+    background-color: #5baaf0;
+    color: #333;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.left-box {
+    overflow-y: scroll;
+    width: 825px;
+    max-width: 825px;
+    height: 500px;
+    max-height: 500px;
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+  
+.right-box {
+    width: 825px;
+    max-width: 825px;
+    height: 500px;
+    max-height: 500px;
+    float: right;
+    padding: 12px;
+    text-align: center; 
+}
+
+.right-box input[type="text"] {
+    width: 30%;
+    padding: 5px 20px;
+    margin: 0px 0px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #aaa;
+}
+
+.right-box input[type="submit"] {
+    background-color: #5baaf0;
+    color: #333;
+    font-size: 12px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.expanded-image {
+    border: none;
+    position: fixed;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    cursor: zoom-out;
+}
